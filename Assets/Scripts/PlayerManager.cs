@@ -7,10 +7,10 @@ public class PlayerManager : MonoBehaviour
 {
     public CharacterController controller;
     public Transform floorCheck;
-    public float playerSpeed = 5.5f;
-    public float gravity = -16f;
+    public float playerSpeed = 6f;
+    public float gravity = -21f;
     public float jumpHeight = 1.2f;
-    public float floorDistance = 0.15f;
+    public float floorDistance = 0.2f;
     public float stamina;
     public float maxStamina = 100.0f;
     public float minStamina = 0.0f;
@@ -35,7 +35,7 @@ public class PlayerManager : MonoBehaviour
     bool isOnFloor;
     bool isReadyToJump;
     public const float staminaDecRate = 2.2f;
-    public const float timeToRegen = 3f;
+    public const float timeToRegen = 0.5f;
     public const float staminaIncRate = 5f;
     public KeyCode sprintKey = KeyCode.LeftShift;
     public LayerMask ground;
@@ -91,7 +91,7 @@ public class PlayerManager : MonoBehaviour
             exhausted = true;
         }
 
-        if (stamina >= (maxStamina * CAI))
+        if (stamina >= (maxStamina * 0.2f))
         {
             exhausted = false;
         }
