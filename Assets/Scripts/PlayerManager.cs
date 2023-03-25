@@ -20,7 +20,7 @@ public class PlayerManager : MonoBehaviour
     public float agility;
     public float intelligence;
     public float strength;
-    public float timeToRegenEquals = 3f;
+    public float timeToRegenEquals = 0.5f;
     public float staminaRegenTimer = 0.0f;
     public float regSpeed;
     public int additionalPoints = 11;
