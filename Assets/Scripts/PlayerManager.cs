@@ -43,6 +43,7 @@ public class PlayerManager : MonoBehaviour
     public PlayerUI healthBar;
     public PlayerUI staminaBar;
     public bool exhausted;
+    public float CAI;
 
 
     private void Start()
@@ -90,7 +91,7 @@ public class PlayerManager : MonoBehaviour
             exhausted = true;
         }
 
-        if (stamina >= (maxStamina * 0.9f))
+        if (stamina >= (maxStamina * CAI))
         {
             exhausted = false;
         }
