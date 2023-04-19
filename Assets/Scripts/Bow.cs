@@ -20,7 +20,7 @@ public class Bow : MonoBehaviour
 
         if (Input.GetButtonUp("Fire1"))
         {
-            Rigidbody arrow = Instantiate(arrowObj, spawn.position, Quaternion.identity) as Rigidbody;
+            Rigidbody arrow = Instantiate(arrowObj, spawn.position, spawn.rotation) as Rigidbody;
             arrow.AddForce(spawn.forward * fireCharge, ForceMode.Impulse);
             fireCharge = 0f;
         }

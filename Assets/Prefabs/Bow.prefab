@@ -49,7 +49,7 @@ MonoBehaviour:
   maxCharge: 100
   chargeRate: 80
   spawn: {fileID: 6060589285174568855}
-  arrowObj: {fileID: 930383219940648361, guid: 14f09655ce8740e44b132b06afe5fe23, type: 3}
+  arrowObj: {fileID: 8852615629828549081, guid: bf1e15c7c1de15e41aba7c6eb4f8f9e8, type: 3}
 --- !u!1 &8706337480526236436
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,7 +74,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8706337480526236436}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3293}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
